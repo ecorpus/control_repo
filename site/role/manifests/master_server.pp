@@ -1,4 +1,4 @@
-class role::master_server.pp{
+class role::master_server.pp {
   include profile::base
   include profile::agent_nodes
 }
