@@ -14,6 +14,9 @@ node 'master.puppet.vm' {
 }
 node /^web/ {
   include role::app_server
+  file { '/root/thisisatest':
+    ensure => file,
+  }
 }
 node /^db/ {
   include role::db_server
