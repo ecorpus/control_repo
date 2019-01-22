@@ -21,4 +21,8 @@ node /^web/ {
 }
 node /^db/ {
   include role::db_server
+  file { '/lel':
+    ensure => file,
+    content => 'lel'
+  }
 }
