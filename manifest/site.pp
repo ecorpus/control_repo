@@ -12,7 +12,7 @@ node 'master.puppet.vm' {
     content => "Welcome to ${fqdn}\n",
   }
 }
-node /^web/ {
+node 'web.puppet.vm' {
   file { '/root/thisisatest':
     ensure => file,
     content => 'lol'
